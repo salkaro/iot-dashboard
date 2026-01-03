@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-    title: "Salkaro | Sign Up",
+    title: "IoT IoT Salkaro | Sign Up",
     description: "Sign up page",
     robots: {
         index: false,
@@ -34,7 +34,7 @@ export default function SignUp() {
                                 <AvatarFallback>SK</AvatarFallback>
                             </Avatar>
                         </div>
-                        Salkaro
+                        IoT Salkaro
                     </a>
                     <ModeToggle />
                 </div>
@@ -45,7 +45,7 @@ export default function SignUp() {
                 </div>
             </div>
             <div className="bg-muted relative hidden lg:flex items-center justify-center">
-                <p className="font-bold text-lg">Salkaro - For a curious mind</p>
+                <p className="font-bold text-lg">IoT Salkaro - For a curious mind</p>
             </div>
         </div>
     );

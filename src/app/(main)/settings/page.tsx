@@ -3,8 +3,8 @@ import Page from "@/components/main/settings/Page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Salkaro | Settings",
-    description: "Salkaro settings dashboard",
+    title: "IoT Salkaro | Settings",
+    description: "IoT Salkaro settings dashboard",
     robots: {
         index: false,
         follow: false,

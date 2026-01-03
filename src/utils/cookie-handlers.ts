@@ -4,7 +4,7 @@ export function getCookie(name: string): string | null {
     const uid = auth.currentUser?.uid;
     if (!uid) return null;
     const match = document.cookie.match(
-        new RegExp(`(?:^|; )salkaro\\.${uid}\\.${name}=([^;]+)`)
+        new RegExp(`(?:^|; )iot.salkaro\\.${uid}\\.${name}=([^;]+)`)
     );
     if (!match) return null;
     try {
@@ -26,7 +26,7 @@ export function setCookie(name: string, value: string, options: { expires?: numb
     const binStr = Array.from(bytes, b => String.fromCodePoint(b)).join("");
     const safe = btoa(binStr);
 
-    let cookie = `salkaro.${uid}.${name}=${safe}; path=${options.path || '/'};`;
+    let cookie = `iot.salkaro.${uid}.${name}=${safe}; path=${options.path || '/'};`;
 
     if (options.expires) {
         const date = new Date();
@@ -41,7 +41,7 @@ export function removeCookie(name: string): void {
     const uid = auth.currentUser?.uid as string;
     if (!uid) return;
 
-    document.cookie = `salkaro.${uid}.${name}=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT;`;
+    document.cookie = `iot.salkaro.${uid}.${name}=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT;`;
 }
 
 export function removeAllCookies(): void {
@@ -49,7 +49,7 @@ export function removeAllCookies(): void {
 
     cookies.forEach(cookie => {
         const trimmed = cookie.trim();
-        if (trimmed.startsWith("salkaro.")) {
+        if (trimmed.startsWith("iot.salkaro.")) {
             const cookieName = trimmed.split("=")[0];
             document.cookie = `${cookieName}=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT;`;
         }

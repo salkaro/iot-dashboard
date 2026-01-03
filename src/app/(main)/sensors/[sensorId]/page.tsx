@@ -5,8 +5,8 @@ import React from 'react'
 
 
 export const metadata: Metadata = {
-    title: "Salkaro | Sensor",
-    description: "Salkaro sensors dashboard",
+    title: "IoT Salkaro | Sensor",
+    description: "IoT Salkaro sensors dashboard",
     robots: {
         index: false,
         follow: false,

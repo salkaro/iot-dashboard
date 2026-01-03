@@ -3,8 +3,8 @@ import Page from "@/components/main/sensors/Page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Salkaro | Sensors",
-    description: "Salkaro sensors dashboard",
+    title: "IoT Salkaro | Sensors",
+    description: "IoT Salkaro sensors dashboard",
     robots: {
         index: false,
         follow: false,

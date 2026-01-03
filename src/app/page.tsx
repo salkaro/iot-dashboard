@@ -2,8 +2,8 @@ import NotFoundInfo from "@/components/ui/not-found";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Salkaro | Dashboard",
-    description: "Salkaro overview dashboard",
+    title: "IoT Salkaro | Dashboard",
+    description: "IoT Salkaro overview dashboard",
     robots: {
         index: false,
         follow: false,

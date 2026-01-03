@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-    title: "Salkaro | Login",
+    title: "IoT Salkaro | Login",
     description: "Login",
     robots: {
         index: false,
@@ -34,7 +34,7 @@ export default function Login() {
                                 <AvatarFallback>SK</AvatarFallback>
                             </Avatar>
                         </div>
-                        Salkaro
+                        IoT Salkaro
                     </a>
                     <ModeToggle />
                 </div>
@@ -47,7 +47,7 @@ export default function Login() {
                 </div>
             </div>
             <div className="bg-muted relative hidden lg:flex items-center justify-center">
-                <p className="font-bold text-lg">Salkaro - For a curious mind</p>
+                <p className="font-bold text-lg">IoT Salkaro - For a curious mind</p>
             </div>
         </div>
     )
