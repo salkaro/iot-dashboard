@@ -30,7 +30,7 @@ export default function SignUp() {
                     <a href="/login" className="flex items-center gap-2 font-medium">
                         <div className="text-primary-foreground flex size-6 items-center justify-center rounded-md">
                             <Avatar>
-                                <AvatarImage src="/logos/favicon-orange.svg" className="scale-80" />
+                                <AvatarImage src="/logos/icon.svg" />
                                 <AvatarFallback>SK</AvatarFallback>
                             </Avatar>
                         </div>
